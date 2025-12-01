@@ -1,3 +1,3 @@
 # 2 Проект
 ## Ссылки
-- [Публичная страница на GitHub Pages](https://hirunecode.github.io/pr1/)
+- [Публичная страница на GitHub Pages](https://hirunecode.github.io/pr2/)
