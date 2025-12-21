@@ -1,0 +1,236 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: stretch;
+    width: 100%;
+}
+
+.header__text {
+    position: absolute;
+    left: 16%;
+    top: 50%;
+    /*transform: translate(-50%, -50%);*/
+    /*color: rgb(235, 235, 235);*/
+    font-size: 60px;
+}
+
+.header__text span {
+    display: block;
+    color: rgb(65, 80, 103);
+}
+
+
+.header__text .header__text__span {
+    color: var(--color-white);
+    background-color: var(--color-orange);
+    padding: 0px 10px 10px 10px;
+    transform: translate(-10px);
+}
+
+.header__img {
+    grid-column: 2;
+    justify-self: center;
+}
+
+.header__img img {
+    display: block;
+}
+
+.header__aside {
+    grid-column: 3;
+    width: 100%;
+    background-color: var(--color-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__aside ul {
+    list-style: none;
+    font-size: 32px;
+}
+
+.header__aside li {
+    margin-bottom: 20px;
+}
+
+.header__aside a {
+    color: lightgray;
+}
+
+.header__aside a:hover {
+  color: var(--color-white);
+}
+
+.main .main__section {
+    margin-top: 90px;
+}
+
+.main h3 {
+    font-weight: 300;
+    font-size: 24px;
+    color: var(--color-blue);
+    text-align: center;
+}
+
+.main h2 {
+    font-weight: 900;
+    font-size: 36px;
+    color: var(--color-blue);
+    text-align: center;
+}
+
+.feature__div {
+    padding-top: 20px;
+    padding-bottom: 100px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 30px; 
+    max-width: 1200px; 
+    margin: 0 auto;
+}
+
+.feature__div .feature__item {
+    text-align: center; 
+    padding: 20px; 
+}
+
+.feature__div .feature__item h3 {
+    margin-top: 35px;
+    font-size: 20px;
+    font-weight: 800;
+    color: #333;
+}
+
+.feature__div .feature__item h4 {
+    margin-top: 5px;
+    color: var(--color-blue);
+    font-weight: 400;
+}
+
+
+.product__section {
+    max-width: 1450px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+.product__grid {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.product__grid3 {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+
+.product__grid4 {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.product__card {
+    display: flex;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    overflow: hidden;
+    height: 100%;
+}
+
+.card__image {
+    width: 45%;
+    background-color: #f9f9f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card__image img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.product__card__content {
+    width: 55%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.product__card__content h4 {
+    color: var(--color-orange);
+    font-size: 18px;
+    margin: 0 0 10px 0;
+}
+
+.product__card__content h3 {
+    margin: 0 0 10px 0;
+    font-size: 24px;
+    color: #333;
+    line-height: 1.2;
+}
+
+.product__card__content h5 {
+    font-weight: normal;
+    font-size: 15px;
+    color: #666;
+    margin: 0 0 25px 0;
+    line-height: 1.5;
+}
+
+.card__buttons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.btn__buy {
+    background-color: var(--color-orange);
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 12px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.btn__details {
+    background: none;
+    border: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 12px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+
