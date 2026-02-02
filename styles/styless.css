@@ -20,6 +20,7 @@ a {
 }
 
 .header {
+    min-height: 900px;
     position: relative;
     display: grid;
     grid-template-columns: 1fr auto 1fr;
@@ -65,6 +66,32 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+}
+
+.menu ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu__toggle {
+    display: none;
+    width: 32px;
+    height: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.menu__toggle span {
+    display: block;
+    height: 3px;
+    background-color: #fff;
+    border-radius: 2px;
 }
 
 .header__aside ul {

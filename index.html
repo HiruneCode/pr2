@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Рево-кофе</title>
-    <link rel="stylesheet" href="colors.css">
-    <link rel="stylesheet" href="styless.css">
+    <link rel="stylesheet" href="styles/colors.css">
+    <link rel="stylesheet" href="styles/styless.css">
+    <link rel="stylesheet" href="styles/mobile.css">
 </head>
 
 <body>
@@ -23,7 +24,14 @@
         </div>
 
         <aside class="header__aside">
-            <nav class="menu">
+
+             <button class="menu__toggle" id="menuToggle" aria-label="Открыть меню" aria-expanded="false">
+                <span class="menu__toggle__line"></span>
+                <span class="menu__toggle__line"></span>
+                <span class="menu__toggle__line"></span>
+            </button>
+
+            <nav class="menu", id="mainNav">
                 <ul>
                     <li><a href="#feature-div">Кофе</a></li>
                     <li><a href="#product-grid">Комбо</a></li>
@@ -261,6 +269,8 @@
     <footer>
         <p>Современные технологии достигли такого уровня, что глубокий уровень погружения требует от&nbsp;нас анализа переосмысления внешнеэкономических политик! Для современного мира социально-экономическое развитие, а&nbsp;также свежий взгляд на&nbsp;привычные вещи&nbsp;&mdash; безусловно открывает новые горизонты для распределения внутренних резервов и&nbsp;ресурсов. Однозначно, элементы политического процесса и&nbsp;по&nbsp;сей день остаются уделом либералов, которые жаждут быть заблокированы в&nbsp;рамках своих собственных рациональных ограничений.</p>
     </footer>
+
+    <script src="scripts/menu.js"></script>
 
 </body>
 </html>
